@@ -1,388 +1,107 @@
-<!DOCTYPE html>
-<html class="no-js" lang="en">
-
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Marcus Ong</title>
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marcus Ong</title>
+<meta name="description" content="Marcus Ong, software engineer in Singapore working on ML infrastructure, data science and product.">
+<link rel="icon" href="favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #f8f9f7;
+    --ink: #1b1e22;
+    --muted: #5d6570;
+    --rule: #d9dcdf;
+    --accent: #2a47c4;
+    color-scheme: light dark;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #16181b;
+      --ink: #e7e8e9;
+      --muted: #9aa1a9;
+      --rule: #2e3237;
+      --accent: #93a6ff;
+    }
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font: 400 1.125rem/1.6 "Newsreader", Georgia, serif;
+    font-optical-sizing: auto;
+  }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
+  a:hover { text-decoration-thickness: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  main {
+    max-width: 36rem;
+    margin: 0 auto;
+    padding: clamp(3rem, 12vw, 7rem) 1rem 4rem;
+  }
+
+  h1 { margin: 0; font-size: 2rem; line-height: 1.3; font-weight: 500; }
+  .tagline { margin: 0.25rem 0 0; color: var(--muted); }
+
+  ol {
+    list-style: none;
+    margin: 3.5rem 0 0;
+    padding: 0;
+    border-top: 1px solid var(--rule);
+  }
+  li { padding: 1.5rem 0; border-bottom: 1px solid var(--rule); }
+  .head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0 1rem; }
+  h2 { margin: 0; font-size: 1.125rem; font-weight: 500; }
+  .when { color: var(--muted); font-variant-numeric: tabular-nums; }
+  .role { margin: 0; font-style: italic; color: var(--muted); }
+  li p:last-child { margin: 0.5rem 0 0; }
+
+  footer { margin-top: 2.5rem; display: flex; gap: 1.25rem; }
+</style>
 </head>
-
 <body>
-    <div id="mobile-menu-open" class="shadow-large">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-    </div>
-    <!-- End #mobile-menu-toggle -->
-    <header>
-        <div id="mobile-menu-close">
-            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
-        </div>
-        <ul id="menu" class="shadow">
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
-            <li>
-                <a href="#education">Education</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-    </header>
-    <!-- End header -->
+<main>
+  <h1>Marcus Ong</h1>
+  <p class="tagline">Software engineer in Singapore, working on ML infrastructure, data science and product in medicine and finance.</p>
 
-    <div id="lead">
-        <div id="lead-content">
-            <div id="my-image">
-            <img src="images/me.png" style="margin: 10px">
-            </div>
-            <h1>Marcus Ong</h1>
-            <h2>Software Engineer, Data Analyst, Student</h2>
-            <a href="Resume.pdf" class="btn-rounded-white">Download Resume</a>
-        </div>
-        <!-- End #lead-content -->
+  <ol>
+    <li>
+      <div class="head"><h2>Us2.ai</h2><span class="when">2025 to now</span></div>
+      <p class="role">Co-head of engineering</p>
+      <p>Leading engineering at a medical AI startup, and turning customer needs into technical projects.</p>
+    </li>
+    <li>
+      <div class="head"><h2>Us2.ai</h2><span class="when">2023 to 2025</span></div>
+      <p class="role">Software architect, cloud and ML infrastructure</p>
+      <p>Scaled the platform across seven AWS regions, cut average report generation time by 40%, and reduced cloud costs by half.</p>
+    </li>
+    <li>
+      <div class="head"><h2>Us2.ai</h2><span class="when">2021 to 2023</span></div>
+      <p class="role">Software engineer, full stack and ML</p>
+      <p>Built product features end to end, raised view-classification accuracy from 94% to 99%, and co-authored an eBioMedicine paper on echocardiography models.</p>
+    </li>
+    <li>
+      <div class="head"><h2>Sellgo</h2><span class="when">2020</span></div>
+      <p class="role">Software engineer</p>
+      <p>Made the data platform's web crawler 30 times faster and brought slow API endpoints down from 15 seconds to one.</p>
+    </li>
+    <li>
+      <div class="head"><h2>Two Sigma</h2><span class="when">2019 to 2021</span></div>
+      <p class="role">Data scientist, consultant</p>
+      <p>Completed six projects searching alternative data for trading signals.</p>
+    </li>
+  </ol>
 
-        <div id="lead-overlay"></div>
-
-        <div id="lead-down">
-            <span>
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            </span>
-        </div>
-        <!-- End #lead-down -->
-    </div>
-    <!-- End #lead -->
-
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2 class="heading">About Me</h2>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                        Hello! I'm Marcus, a penultimate undergraduate at the National University of Singapore pursuing a degree in Computer Science.
-                        I enjoy creating applications to solve problems and analyzing data to derive insights.
-                        I'm currently looking for opportunities where I get to work on interesting projects and contribute my skills in web development and data analysis.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End #about -->
-
-    <div id="experience" class="background-alt">
-        <h2 class="heading">Experience</h2>
-        <div id="experience-timeline">
-            <div data-date="March 2019 – Present">
-                <h3>Leading Quantitative Hedge Fund</h3>
-                <h4>Quantitative Research Consultant</h4>
-                <p>
-                    <ul>
-                        <li>
-                        Successfully delivered multiple analytics projects with the objective of identifying trading signals
-                        </li>
-                        <li>
-                        Learnt to conduct literature review, data preparation, data profiling, feature engineering, hypothesis testing and regression modelling in practice and gained knowledge of a clear and cohesive data analysis workflow
-                        </li>
-                    </ul>
-                </p>
-            </div>
-
-            <div data-date="January 2019 – May 2019">
-                <h3>National University of Singapore</h3>
-                <h4>Teaching Assistant for CS2030: Programming Methodology II</h4>
-                <p>
-                    <ul>
-                        <li>
-                            The course explores two major programming paradigms: objected-oriented programming methodology and functional programming using Java
-                        </li>
-                        <li>
-                            Prepared learning materials and learnt to communicate technical concepts clearly in my weekly programming lab sessions with the students
-                        </li>
-                    </ul>
-                </p>
-            </div>
-
-            <div data-date="September 2018 – March 2019">
-                <h3>National University of Singapore</h3>
-                <h4>Student Lab Assistant / Software Developer</h4>
-                <p>
-                    <ul>
-                        <li>
-                            Assisted students and faculty with the use of Bloomberg Terminals in the Investment Management & Trading Lab in the NUS Business School
-                        </li>
-                        <li>
-                            Implemented a web application to display live market price feeds powered by the Bloomberg API, seen by many visitors as they pass by the lab
-                        </li>
-                        <li>
-                            Technologies used: Python, Flask, Javascript, React, Bloomberg Python API
-                        </li>
-                    </ul>
-                </p>
-            </div>
-
-            <div data-date="December 2017 – June 2018">
-                <h3>Overall Productivity Solutions Private Limited (OPS)</h3>
-                <h4>Software Developer Intern</h4>
-                <p>
-                    <ul>
-                        <li>
-                            OPS is a technology consulting SME with the passion to optimize productivity and allocate resources efficiently
-                        </li>
-                        <li>
-                            Assisted the lead developer in the development of an automatic rostering application for the cinema industry
-                        </li>
-                        <li>
-                            Technologies used: Python, Django, MySQL, Redis, Numpy/Pandas, Javascript/HTML/CSS
-                        </li>
-                    </ul>
-                </p>
-            </div>
-
-            <div data-date="April 2014 – August 2014">
-                <h3>Agency of Science, Technology and Research (A*STAR)</h3>
-                <h4>Data Analytics Intern</h4>
-                <p>
-                    <ul>
-                        <li>
-                            A*STAR is a government agency which seeks to advance science and develop innovative technology to further economic growth and improve lives
-                        </li>
-                        <li>
-                            Wrote a web crawler to scrape profiles of civil servants in Singapore, processed the scraped data and used it to build a web app, which analyzes the career paths of civil servants
-                        </li>
-                        <li>
-                            Created a soccer simulation app as a proof-of-concept for a low-cost solution to recording soccer performance statistics
-                        </li>
-                        <li>
-                            Technologies used: Javascript, Python, Scrapy, Selenium, R
-                        </li>
-                    </ul>
-                </p>
-            </div>
-        </div>
-    </div>
-    <!-- End #experience -->
-
-    <div id="education">
-        <h2 class="heading">Education</h2>
-        <div class="education-block">
-            <h3>National University of Singapore</h3>
-            <span class="education-date">August 2018 - Present (Expected: December 2021)</span>
-            <h4>Bachelor of Computing (Honours) in Computer Science</h4>
-            <p>
-                Relevant Coursework: Software Engineering, Introduction to Artificial Intelligence, Programming Methodology II (Java), Data Structures and Algorithms (Java), Design and Analysis of Algorithms
-            </p>
-        </div>
-        <!-- End .education-block -->
-
-        <div class="education-block">
-            <h3>Ngee Ann Polytechnic</h3>
-            <span class="education-date">April 2012 - April 2015</span>
-            <h4>Diploma in Information Technology (Merit)</h4>
-            <p>
-                Relevant Coursework:
-                Object-oriented Programming, Object-oriented Analysis & Design, Advanced OO Analysis & Design,
-                User Interface Design, Databases, Developing Web Applications, Data Structures and Algorithms, Computers and Operating Systems,
-                Local Area Networks, Wireless Technology, Digital Forensics, Information Security, Malware Analysis & Antivirus Technology
-            </p>
-        </div>
-
-            <div class="education-block">
-            <h3>Self-Learning</h3>
-            <span class="education-date">January 2019 - February 2019</span>
-            <h4>Hackwagon Academy Data Science 102 Course</h4>
-            <p>
-                 This course focused on Pandas, data visualization, web scraping, text mining and machine learning models (Scikit-learn).
-            </p>
-            <span class="education-date">Ongoing</span>
-            <h4>Udemy Courses</h4>
-            <p>
-                Courses taken or in-progress includes Node with React: Fullstack Web Development, Modern React with Redux, The Web Developer Bootcamp, and so on.
-            </p>
-        </div>
-        <!-- End .education-block -->
-    </div>
-    <!-- End #education -->
-
-    <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
-        <div class="container">
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/ara.png" style="margin: 20px 0px" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Ara</h3>
-                        <p>
-                            Ara is a full-stack web application developed for Golden Village, the leading movie theatre in Singapore.
-                            It is used internally by crew managers to generate optimal crew schedules automatically, which can be a challenge given the irregular movie showtimes and staff availability.
-                            Technologies used: Python, Django, MySQL, Redis, Numpy/Pandas, Javascript/HTML/CSS.
-                        </p>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/camri.gif" style="margin: 20px 0px" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>CAMRI Data Walls</h3>
-                        <p>
-                            A web application developed for the <a href="https://images.app.goo.gl/hKavA5hu8LCSarss7" target="_blank">Investment Management & Trading Lab</a> in the NUS Business School.
-                            It displays live market price feeds powered by the Bloomberg API, seen by many visitors as they pass by the lab.
-                            Technologies used: Python, Flask, Javascript, React, Bloomberg Python API.
-                            <br>
-                        </p>
-                        <a href="https://github.com/marqueurs404/CAMRI-Data-Wall" target="_blank">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project no-image">
-                    <div class="project-info">
-                        <h3>Human Resource Analytics</h3>
-                        <p>
-                            Wrote a web crawler to scrape profiles of civil servants in Singapore, processed the scraped data and used it to build a web app, which analyzes the career paths of civil servants.
-                            Technologies used: Javascript, Python, Scrapy, Selenium, R
-                        </p>
-                        <a href="https://imgur.com/weUIFp8" target="_blank">View Poster</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project no-image">
-                    <div class="project-info">
-                        <h3>Soccer Analytics</h3>
-                        <p>
-                            Created a HTML5 Canvas-based soccer simulation app as a proof-of-concept for a low-cost solution to recording soccer performance statistics.
-                            Technologies used: Javascript, jQuery, Backbone.js, EaselJS, tween.js.
-                        </p>
-                        <a href="https://imgur.com/a/iuwVqh0" target="_blank">View Poster</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/duke.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Duke</h3>
-                        <p>
-                            Duke is a task manager chatbot which helps you to manage and track your to-dos, deadlines and events.
-                            Duke was built in the Software Engineering module which teaches students the principles of software engineering and objected-oriented programming in Java.
-                            Technologies used: Java, JavaFx, Junit.
-                        </p>
-                        <a href="https://marqueurs404.github.io/duke/" target="_blank">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-            </div>
-        </div>
-    </div>
-    <!-- End #projects -->
-
-    <div id="skills">
-        <h2 class="heading">Skills</h2>
-        <ul>
-            <!-- Programming Languages  -->
-            <li>Python</li>
-            <li>JavaScript</li>
-            <li>Java</li>
-            <li>R</li>
-            <!-- Web Development (Frontend) -->
-            <li>HTML/CSS</li>
-            <li>React</li>
-            <!-- Web Development (Backend) -->
-            <li>Django</li>
-            <li>Flask</li>
-            <li>Node.js</li>
-            <!-- Data Analytics -->
-            <li>Numpy/Pandas/Scipy</li>
-            <li>Scikit-learn/Statsmodels</li>
-            <li>Matplotlib/Seaborn/Plotly</li>
-            <li>SQL</li>
-            <!-- DevOps -->
-            <li>Git/Github</li>
-            <li>Linux</li>
-            <li>Travis</li>
-        </ul>
-    </div>
-    <!-- End #skills -->
-
-    <div id="contact">
-        <h2>Get in Touch</h2>
-        <div id="contact-form">
-            <form method="POST" action="https://formspree.io/marcus.ong404@email.com">
-                <input type="hidden" name="_subject" value="Contact request from personal website" />
-                <input type="email" name="_replyto" placeholder="Your email" required>
-                <textarea name="message" placeholder="Your message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-        <!-- End #contact-form -->
-    </div>
-    <!-- End #contact -->
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-5 copyright">
-                    <p>
-                        Copyright &copy; 2020 Marcus Ong
-                    </p>
-                </div>
-                <div class="col-sm-2 top">
-                    <span id="to-top">
-                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                    </span>
-                </div>
-                <div class="col-sm-5 social">
-                    <ul>
-                        <li>
-                            <a href="https://github.com/marqueurs404/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/marcus-ong-a3607055/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="mailto:marcus.ong404@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- End footer -->
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/scripts.min.js"></script>
+  <footer>
+    <a href="https://github.com/marqueurs404">GitHub</a>
+    <a href="https://www.linkedin.com/in/marcus-ong-a3607055/">LinkedIn</a>
+  </footer>
+</main>
 </body>
-
 </html>
